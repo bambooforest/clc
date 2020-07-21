@@ -1,0 +1,15 @@
+Package: clc
+Type: Package
+Title: R Interface to the 100 LC data
+Version: 0.1.0
+Author: Who wrote it
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Depends: 
+    tidyverse,
+    tidytext
+RoxygenNote: 7.1.1.9000

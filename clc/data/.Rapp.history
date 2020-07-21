@@ -1,0 +1,4 @@
+load("/Users/stiv/Github/clc-dev/clc/data/clc.RData")
+ls()
+library(dplyr)
+glimpse(clc)
