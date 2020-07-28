@@ -8,8 +8,8 @@
 #' @examples
 #' get_word_counts()
 
-get_word_counts <- function(id=10, add_index=TRUE) {
-  text_lines <- clc %>% dplyr::filter(file_id == id) %>% dplyr::select(line_id, text)
+get_word_counts <- function(files_id=11, add_index=TRUE) {
+  text_lines <- clc_line %>% dplyr::filter(file_id == files_id) %>% dplyr::select(text)
   words <- text_lines %>% tidytext::unnest_tokens(word, text)
   counts <- words %>% count(word, sort = TRUE)
   if (add_index) {

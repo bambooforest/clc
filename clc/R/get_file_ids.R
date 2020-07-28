@@ -7,7 +7,7 @@
 #' get_file_ids()
 
 get_file_ids <- function() {
-  file_ids <- clc %>% select(file_id) %>% distinct() %>% arrange(file_id)
-  file_ids <- as.vector(file_ids$file_id)
+  file_ids <- clc_file %>% select(id) %>% distinct() %>% arrange(id)
+  file_ids <- as.vector(file_ids$id)
   return(file_ids)
 }
